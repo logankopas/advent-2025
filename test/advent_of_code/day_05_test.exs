@@ -3,12 +3,27 @@ defmodule AdventOfCode.Day05Test do
 
   import AdventOfCode.Day05
 
-  @tag :skip
+  def input() do
+    """
+    3-5
+    10-14
+    16-20
+    12-18
+
+    1
+    5
+    8
+    11
+    17
+    32
+    """
+  end
+
   test "part1" do
     input = nil
     result = part1(input)
 
-    assert result
+    assert result == 3
   end
 
   @tag :skip
