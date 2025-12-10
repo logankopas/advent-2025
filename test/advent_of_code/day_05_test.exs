@@ -5,10 +5,12 @@ defmodule AdventOfCode.Day05Test do
 
   def input() do
     """
-    3-5
+    3-3
     10-14
     16-20
+    10-20
     12-18
+    3-5
 
     1
     5
@@ -20,17 +22,14 @@ defmodule AdventOfCode.Day05Test do
   end
 
   test "part1" do
-    input = nil
-    result = part1(input)
+    result = part1(input())
 
     assert result == 3
   end
 
-  @tag :skip
   test "part2" do
-    input = nil
-    result = part2(input)
+    result = part2(input())
 
-    assert result
+    assert result == 14
   end
 end
